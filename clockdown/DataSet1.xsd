@@ -1,0 +1,1088 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="InformixConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="InformixConnectionString (Settings)" PropertyReference="ApplicationSettings.clockdown.Properties.Settings.GlobalReference.Default.InformixConnectionString" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="saeemplTableAdapter" GeneratorDataComponentClassName="saeemplTableAdapter" Name="saeempl" UserDataComponentName="saeemplTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="InformixConnectionString (Settings)" DbObjectName="newspringscci.saeempl" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM "informix"."saeempl" WHERE (("empl_cod_empl" = ?) AND ("empl_cod_empr" = ?) AND ("empl_ape_empl" = ?) AND ("empl_nom_empl" = ?) AND ((? = 1 AND "empl_dir_empl" IS NULL) OR ("empl_dir_empl" = ?)) AND ("empl_cod_estc" = ?) AND ("empl_cod_sexo" = ?) AND ("empl_cod_eemp" = ?) AND ((? = 1 AND "empl_cod_tsan" IS NULL) OR ("empl_cod_tsan" = ?)) AND ((? = 1 AND "empl_fec_naci" IS NULL) OR ("empl_fec_naci" = ?)) AND ((? = 1 AND "empl_cod_ciud" IS NULL) OR ("empl_cod_ciud" = ?)) AND ((? = 1 AND "empl_mai_empl" IS NULL) OR ("empl_mai_empl" = ?)) AND ((? = 1 AND "empl_fot_empl" IS NULL) OR ("empl_fot_empl" = ?)) AND ((? = 1 AND "empl_fir_empl" IS NULL) OR ("empl_fir_empl" = ?)) AND ((? = 1 AND "empl_cod_reli" IS NULL) OR ("empl_cod_reli" = ?)) AND ("empl_cas_empl" = ?) AND ("empl_veh_empl" = ?) AND ("empl_otr_ingr" = ?) AND ("empl_fue_sind" = ?) AND ((? = 1 AND "empl_car_iess" IS NULL) OR ("empl_car_iess" = ?)) AND ((? = 1 AND "empl_cod_iess" IS NULL) OR ("empl_cod_iess" = ?)) AND ((? = 1 AND "empl_cod_pdie" IS NULL) OR ("empl_cod_pdie" = ?)) AND ((? = 1 AND "empl_cod_tmil" IS NULL) OR ("empl_cod_tmil" = ?)) AND ((? = 1 AND "empl_lib_mili" IS NULL) OR ("empl_lib_mili" = ?)) AND ((? = 1 AND "empl_cod_copr" IS NULL) OR ("empl_cod_copr" = ?)) AND ((? = 1 AND "empl_car_prof" IS NULL) OR ("empl_car_prof" = ?)) AND ((? = 1 AND "empl_cod_tlic" IS NULL) OR ("empl_cod_tlic" = ?)) AND ((? = 1 AND "empl_num_lice" IS NULL) OR ("empl_num_lice" = ?)) AND ((? = 1 AND "empl_num_pasa" IS NULL) OR ("empl_num_pasa" = ?)) AND ((? = 1 AND "empl_num_perm" IS NULL) OR ("empl_num_perm" = ?)) AND ((? = 1 AND "empl_fin_pais" IS NULL) OR ("empl_fin_pais" = ?)) AND ("empl_sal_sala" = ?) AND ((? = 1 AND "empl_cod_mone" IS NULL) OR ("empl_cod_mone" = ?)) AND ((? = 1 AND "empl_cod_tcon" IS NULL) OR ("empl_cod_tcon" = ?)) AND ((? = 1 AND "empl_num_cont" IS NULL) OR ("empl_num_cont" = ?)) AND ((? = 1 AND "empl_cod_tpag" IS NULL) OR ("empl_cod_tpag" = ?)) AND ((? = 1 AND "empl_cod_banc" IS NULL) OR ("empl_cod_banc" = ?)) AND ((? = 1 AND "empl_cod_tcta" IS NULL) OR ("empl_cod_tcta" = ?)) AND ((? = 1 AND "empl_num_ctas" IS NULL) OR ("empl_num_ctas" = ?)) AND ("empl_seg_sala" = ?) AND ("empl_hor_extr" = ?) AND ("empl_des_impu" = ?) AND ((? = 1 AND "empl_pen_alim" IS NULL) OR ("empl_pen_alim" = ?)) AND ((? = 1 AND "empl_cod_parr" IS NULL) OR ("empl_cod_parr" = ?)) AND ((? = 1 AND "empl_cod_barr" IS NULL) OR ("empl_cod_barr" = ?)) AND ((? = 1 AND "empl_cod_inst" IS NULL) OR ("empl_cod_inst" = ?)) AND ((? = 1 AND "empl_dir_nume" IS NULL) OR ("empl_dir_nume" = ?)) AND ("empl_ape_nomb" = ?) AND ("empl_val_eval" = ?) AND ("empl_num_hora" = ?) AND ("empl_val_hora" = ?) AND ((? = 1 AND "empl_num_npat" IS NULL) OR ("empl_num_npat" = ?)) AND ((? = 1 AND "empl_cam_htra" IS NULL) OR ("empl_cam_htra" = ?)) AND ((? = 1 AND "empl_cod_alt" IS NULL) OR ("empl_cod_alt" = ?)) AND ((? = 1 AND "empl_anti_empl" IS NULL) OR ("empl_anti_empl" = ?)) AND ((? = 1 AND "empl_val1_empl" IS NULL) OR ("empl_val1_empl" = ?)) AND ((? = 1 AND "empl_val2_empl" IS NULL) OR ("empl_val2_empl" = ?)) AND ((? = 1 AND "empl_val3_empl" IS NULL) OR ("empl_val3_empl" = ?)) AND ((? = 1 AND "empl_val4_empl" IS NULL) OR ("empl_val4_empl" = ?)) AND ((? = 1 AND "empl_val5_empl" IS NULL) OR ("empl_val5_empl" = ?)) AND ((? = 1 AND "empl_val6_empl" IS NULL) OR ("empl_val6_empl" = ?)) AND ((? = 1 AND "empl_son_desp" IS NULL) OR ("empl_son_desp" = ?)) AND ((? = 1 AND "empl_son_tint" IS NULL) OR ("empl_son_tint" = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_empl" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_empl_cod_empr" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_empr" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_empl_ape_empl" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_ape_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_empl_nom_empl" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_nom_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_dir_empl" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_dir_empl" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_empl_dir_empl" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_dir_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_estc" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_estc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_sexo" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_sexo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_eemp" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_eemp" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_tsan" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_tsan" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_tsan" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_tsan" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_fec_naci" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_fec_naci" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="Original_empl_fec_naci" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="empl_fec_naci" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_ciud" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_ciud" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_empl_cod_ciud" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_ciud" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_mai_empl" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_mai_empl" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_empl_mai_empl" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_mai_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_fot_empl" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_fot_empl" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_empl_fot_empl" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_fot_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_fir_empl" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_fir_empl" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_empl_fir_empl" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_fir_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_reli" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_reli" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_reli" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_reli" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cas_empl" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cas_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_veh_empl" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_veh_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_otr_ingr" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_otr_ingr" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_fue_sind" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_fue_sind" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_car_iess" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_car_iess" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_car_iess" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_car_iess" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_iess" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_iess" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_iess" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_iess" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_pdie" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_pdie" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_pdie" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_pdie" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_tmil" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_tmil" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_tmil" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_tmil" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_lib_mili" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_lib_mili" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_lib_mili" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_lib_mili" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_copr" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_copr" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_empl_cod_copr" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_copr" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_car_prof" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_car_prof" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_car_prof" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_car_prof" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_tlic" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_tlic" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_tlic" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_tlic" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_num_lice" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_num_lice" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_num_lice" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_num_lice" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_num_pasa" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_num_pasa" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_num_pasa" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_num_pasa" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_num_perm" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_num_perm" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_num_perm" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_num_perm" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_fin_pais" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_fin_pais" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="Original_empl_fin_pais" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="empl_fin_pais" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_empl_sal_sala" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="empl_sal_sala" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_mone" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_mone" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_empl_cod_mone" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_mone" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_tcon" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_tcon" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_tcon" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_tcon" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_num_cont" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_num_cont" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_empl_num_cont" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_num_cont" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_tpag" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_tpag" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_tpag" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_tpag" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_banc" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_banc" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_empl_cod_banc" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_banc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_tcta" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_tcta" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_tcta" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_tcta" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_num_ctas" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_num_ctas" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_empl_num_ctas" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_num_ctas" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_seg_sala" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_seg_sala" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_hor_extr" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_hor_extr" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_des_impu" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_des_impu" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_pen_alim" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_pen_alim" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_empl_pen_alim" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="empl_pen_alim" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_parr" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_parr" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_parr" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_parr" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_barr" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_barr" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_barr" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_barr" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_inst" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_inst" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_empl_cod_inst" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_inst" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_dir_nume" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_dir_nume" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_empl_dir_nume" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_dir_nume" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_empl_ape_nomb" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_ape_nomb" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_empl_val_eval" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="empl_val_eval" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_empl_num_hora" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="empl_num_hora" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_empl_val_hora" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="empl_val_hora" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_num_npat" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_num_npat" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_empl_num_npat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_num_npat" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cam_htra" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cam_htra" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cam_htra" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cam_htra" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_alt" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_alt" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_empl_cod_alt" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_cod_alt" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_anti_empl" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_anti_empl" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_anti_empl" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_anti_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_val1_empl" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_val1_empl" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_empl_val1_empl" Precision="18" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="empl_val1_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_val2_empl" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_val2_empl" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_empl_val2_empl" Precision="18" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="empl_val2_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_val3_empl" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_val3_empl" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_empl_val3_empl" Precision="18" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="empl_val3_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_val4_empl" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_val4_empl" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_empl_val4_empl" Precision="18" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="empl_val4_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_val5_empl" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_val5_empl" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_empl_val5_empl" Precision="18" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="empl_val5_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_val6_empl" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_val6_empl" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_empl_val6_empl" Precision="18" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="empl_val6_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_son_desp" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_son_desp" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_son_desp" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_son_desp" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_son_tint" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_son_tint" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_son_tint" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_son_tint" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO "informix"."saeempl" ("empl_cod_empl", "empl_cod_empr", "empl_ape_empl", "empl_nom_empl", "empl_dir_empl", "empl_cod_estc", "empl_cod_sexo", "empl_cod_eemp", "empl_cod_tsan", "empl_fec_naci", "empl_cod_ciud", "empl_mai_empl", "empl_fot_empl", "empl_fir_empl", "empl_cod_reli", "empl_cas_empl", "empl_veh_empl", "empl_otr_ingr", "empl_fue_sind", "empl_car_iess", "empl_cod_iess", "empl_cod_pdie", "empl_cod_tmil", "empl_lib_mili", "empl_cod_copr", "empl_car_prof", "empl_cod_tlic", "empl_num_lice", "empl_num_pasa", "empl_num_perm", "empl_fin_pais", "empl_sal_sala", "empl_cod_mone", "empl_cod_tcon", "empl_num_cont", "empl_cod_tpag", "empl_cod_banc", "empl_cod_tcta", "empl_num_ctas", "empl_seg_sala", "empl_hor_extr", "empl_des_impu", "empl_pen_alim", "empl_cod_parr", "empl_cod_barr", "empl_cod_inst", "empl_dir_nume", "empl_ape_nomb", "empl_val_eval", "empl_num_hora", "empl_val_hora", "empl_num_npat", "empl_cam_htra", "empl_cod_alt", "empl_anti_empl", "empl_val1_empl", "empl_val2_empl", "empl_val3_empl", "empl_val4_empl", "empl_val5_empl", "empl_val6_empl", "empl_son_desp", "empl_son_tint") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_empl" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="empl_cod_empr" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_empr" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="empl_ape_empl" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_ape_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="empl_nom_empl" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_nom_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="empl_dir_empl" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_dir_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_estc" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_estc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_sexo" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_sexo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_eemp" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_eemp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_tsan" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_tsan" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="empl_fec_naci" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="empl_fec_naci" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="empl_cod_ciud" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_ciud" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="empl_mai_empl" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_mai_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="empl_fot_empl" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_fot_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="empl_fir_empl" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_fir_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_reli" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_reli" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cas_empl" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cas_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_veh_empl" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_veh_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_otr_ingr" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_otr_ingr" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_fue_sind" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_fue_sind" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_car_iess" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_car_iess" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_iess" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_iess" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_pdie" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_pdie" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_tmil" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_tmil" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_lib_mili" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_lib_mili" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="empl_cod_copr" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_copr" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_car_prof" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_car_prof" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_tlic" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_tlic" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_num_lice" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_num_lice" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_num_pasa" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_num_pasa" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_num_perm" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_num_perm" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="empl_fin_pais" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="empl_fin_pais" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="empl_sal_sala" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="empl_sal_sala" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="empl_cod_mone" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_mone" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_tcon" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_tcon" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="empl_num_cont" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_num_cont" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_tpag" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_tpag" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="empl_cod_banc" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_banc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_tcta" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_tcta" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="empl_num_ctas" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_num_ctas" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_seg_sala" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_seg_sala" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_hor_extr" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_hor_extr" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_des_impu" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_des_impu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="empl_pen_alim" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="empl_pen_alim" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_parr" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_parr" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_barr" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_barr" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="empl_cod_inst" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_inst" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="empl_dir_nume" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_dir_nume" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="empl_ape_nomb" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_ape_nomb" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="empl_val_eval" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="empl_val_eval" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="empl_num_hora" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="empl_num_hora" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="empl_val_hora" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="empl_val_hora" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="empl_num_npat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_num_npat" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cam_htra" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cam_htra" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="empl_cod_alt" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_cod_alt" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_anti_empl" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_anti_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="empl_val1_empl" Precision="18" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="empl_val1_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="empl_val2_empl" Precision="18" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="empl_val2_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="empl_val3_empl" Precision="18" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="empl_val3_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="empl_val4_empl" Precision="18" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="empl_val4_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="empl_val5_empl" Precision="18" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="empl_val5_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="empl_val6_empl" Precision="18" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="empl_val6_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_son_desp" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_son_desp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_son_tint" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_son_tint" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT empl_cod_empl, empl_cod_empr, empl_ape_empl, empl_nom_empl, empl_dir_empl, empl_cod_estc, empl_cod_sexo, empl_cod_eemp, empl_cod_tsan, empl_fec_naci, empl_cod_ciud, empl_mai_empl, empl_fot_empl, empl_fir_empl, empl_cod_reli, empl_cas_empl, empl_veh_empl, empl_otr_ingr, empl_fue_sind, empl_car_iess, empl_cod_iess, empl_cod_pdie, empl_cod_tmil, empl_lib_mili, empl_cod_copr, empl_car_prof, empl_cod_tlic, empl_num_lice, empl_num_pasa, empl_num_perm, empl_fin_pais, empl_sal_sala, empl_cod_mone, empl_cod_tcon, empl_num_cont, empl_cod_tpag, empl_cod_banc, empl_cod_tcta, empl_num_ctas, empl_seg_sala, empl_hor_extr, empl_des_impu, empl_pen_alim, empl_cod_parr, empl_cod_barr, empl_cod_inst, empl_dir_nume, empl_ape_nomb, empl_val_eval, empl_num_hora, empl_val_hora, empl_num_npat, empl_cam_htra, empl_cod_alt, empl_anti_empl, empl_val1_empl, empl_val2_empl, empl_val3_empl, empl_val4_empl, empl_val5_empl, empl_val6_empl, empl_son_desp, empl_son_tint FROM informix.saeempl</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE "informix"."saeempl" SET "empl_cod_empl" = ?, "empl_cod_empr" = ?, "empl_ape_empl" = ?, "empl_nom_empl" = ?, "empl_dir_empl" = ?, "empl_cod_estc" = ?, "empl_cod_sexo" = ?, "empl_cod_eemp" = ?, "empl_cod_tsan" = ?, "empl_fec_naci" = ?, "empl_cod_ciud" = ?, "empl_mai_empl" = ?, "empl_fot_empl" = ?, "empl_fir_empl" = ?, "empl_cod_reli" = ?, "empl_cas_empl" = ?, "empl_veh_empl" = ?, "empl_otr_ingr" = ?, "empl_fue_sind" = ?, "empl_car_iess" = ?, "empl_cod_iess" = ?, "empl_cod_pdie" = ?, "empl_cod_tmil" = ?, "empl_lib_mili" = ?, "empl_cod_copr" = ?, "empl_car_prof" = ?, "empl_cod_tlic" = ?, "empl_num_lice" = ?, "empl_num_pasa" = ?, "empl_num_perm" = ?, "empl_fin_pais" = ?, "empl_sal_sala" = ?, "empl_cod_mone" = ?, "empl_cod_tcon" = ?, "empl_num_cont" = ?, "empl_cod_tpag" = ?, "empl_cod_banc" = ?, "empl_cod_tcta" = ?, "empl_num_ctas" = ?, "empl_seg_sala" = ?, "empl_hor_extr" = ?, "empl_des_impu" = ?, "empl_pen_alim" = ?, "empl_cod_parr" = ?, "empl_cod_barr" = ?, "empl_cod_inst" = ?, "empl_dir_nume" = ?, "empl_ape_nomb" = ?, "empl_val_eval" = ?, "empl_num_hora" = ?, "empl_val_hora" = ?, "empl_num_npat" = ?, "empl_cam_htra" = ?, "empl_cod_alt" = ?, "empl_anti_empl" = ?, "empl_val1_empl" = ?, "empl_val2_empl" = ?, "empl_val3_empl" = ?, "empl_val4_empl" = ?, "empl_val5_empl" = ?, "empl_val6_empl" = ?, "empl_son_desp" = ?, "empl_son_tint" = ? WHERE (("empl_cod_empl" = ?) AND ("empl_cod_empr" = ?) AND ("empl_ape_empl" = ?) AND ("empl_nom_empl" = ?) AND ((? = 1 AND "empl_dir_empl" IS NULL) OR ("empl_dir_empl" = ?)) AND ("empl_cod_estc" = ?) AND ("empl_cod_sexo" = ?) AND ("empl_cod_eemp" = ?) AND ((? = 1 AND "empl_cod_tsan" IS NULL) OR ("empl_cod_tsan" = ?)) AND ((? = 1 AND "empl_fec_naci" IS NULL) OR ("empl_fec_naci" = ?)) AND ((? = 1 AND "empl_cod_ciud" IS NULL) OR ("empl_cod_ciud" = ?)) AND ((? = 1 AND "empl_mai_empl" IS NULL) OR ("empl_mai_empl" = ?)) AND ((? = 1 AND "empl_fot_empl" IS NULL) OR ("empl_fot_empl" = ?)) AND ((? = 1 AND "empl_fir_empl" IS NULL) OR ("empl_fir_empl" = ?)) AND ((? = 1 AND "empl_cod_reli" IS NULL) OR ("empl_cod_reli" = ?)) AND ("empl_cas_empl" = ?) AND ("empl_veh_empl" = ?) AND ("empl_otr_ingr" = ?) AND ("empl_fue_sind" = ?) AND ((? = 1 AND "empl_car_iess" IS NULL) OR ("empl_car_iess" = ?)) AND ((? = 1 AND "empl_cod_iess" IS NULL) OR ("empl_cod_iess" = ?)) AND ((? = 1 AND "empl_cod_pdie" IS NULL) OR ("empl_cod_pdie" = ?)) AND ((? = 1 AND "empl_cod_tmil" IS NULL) OR ("empl_cod_tmil" = ?)) AND ((? = 1 AND "empl_lib_mili" IS NULL) OR ("empl_lib_mili" = ?)) AND ((? = 1 AND "empl_cod_copr" IS NULL) OR ("empl_cod_copr" = ?)) AND ((? = 1 AND "empl_car_prof" IS NULL) OR ("empl_car_prof" = ?)) AND ((? = 1 AND "empl_cod_tlic" IS NULL) OR ("empl_cod_tlic" = ?)) AND ((? = 1 AND "empl_num_lice" IS NULL) OR ("empl_num_lice" = ?)) AND ((? = 1 AND "empl_num_pasa" IS NULL) OR ("empl_num_pasa" = ?)) AND ((? = 1 AND "empl_num_perm" IS NULL) OR ("empl_num_perm" = ?)) AND ((? = 1 AND "empl_fin_pais" IS NULL) OR ("empl_fin_pais" = ?)) AND ("empl_sal_sala" = ?) AND ((? = 1 AND "empl_cod_mone" IS NULL) OR ("empl_cod_mone" = ?)) AND ((? = 1 AND "empl_cod_tcon" IS NULL) OR ("empl_cod_tcon" = ?)) AND ((? = 1 AND "empl_num_cont" IS NULL) OR ("empl_num_cont" = ?)) AND ((? = 1 AND "empl_cod_tpag" IS NULL) OR ("empl_cod_tpag" = ?)) AND ((? = 1 AND "empl_cod_banc" IS NULL) OR ("empl_cod_banc" = ?)) AND ((? = 1 AND "empl_cod_tcta" IS NULL) OR ("empl_cod_tcta" = ?)) AND ((? = 1 AND "empl_num_ctas" IS NULL) OR ("empl_num_ctas" = ?)) AND ("empl_seg_sala" = ?) AND ("empl_hor_extr" = ?) AND ("empl_des_impu" = ?) AND ((? = 1 AND "empl_pen_alim" IS NULL) OR ("empl_pen_alim" = ?)) AND ((? = 1 AND "empl_cod_parr" IS NULL) OR ("empl_cod_parr" = ?)) AND ((? = 1 AND "empl_cod_barr" IS NULL) OR ("empl_cod_barr" = ?)) AND ((? = 1 AND "empl_cod_inst" IS NULL) OR ("empl_cod_inst" = ?)) AND ((? = 1 AND "empl_dir_nume" IS NULL) OR ("empl_dir_nume" = ?)) AND ("empl_ape_nomb" = ?) AND ("empl_val_eval" = ?) AND ("empl_num_hora" = ?) AND ("empl_val_hora" = ?) AND ((? = 1 AND "empl_num_npat" IS NULL) OR ("empl_num_npat" = ?)) AND ((? = 1 AND "empl_cam_htra" IS NULL) OR ("empl_cam_htra" = ?)) AND ((? = 1 AND "empl_cod_alt" IS NULL) OR ("empl_cod_alt" = ?)) AND ((? = 1 AND "empl_anti_empl" IS NULL) OR ("empl_anti_empl" = ?)) AND ((? = 1 AND "empl_val1_empl" IS NULL) OR ("empl_val1_empl" = ?)) AND ((? = 1 AND "empl_val2_empl" IS NULL) OR ("empl_val2_empl" = ?)) AND ((? = 1 AND "empl_val3_empl" IS NULL) OR ("empl_val3_empl" = ?)) AND ((? = 1 AND "empl_val4_empl" IS NULL) OR ("empl_val4_empl" = ?)) AND ((? = 1 AND "empl_val5_empl" IS NULL) OR ("empl_val5_empl" = ?)) AND ((? = 1 AND "empl_val6_empl" IS NULL) OR ("empl_val6_empl" = ?)) AND ((? = 1 AND "empl_son_desp" IS NULL) OR ("empl_son_desp" = ?)) AND ((? = 1 AND "empl_son_tint" IS NULL) OR ("empl_son_tint" = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_empl" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="empl_cod_empr" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_empr" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="empl_ape_empl" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_ape_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="empl_nom_empl" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_nom_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="empl_dir_empl" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_dir_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_estc" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_estc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_sexo" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_sexo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_eemp" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_eemp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_tsan" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_tsan" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="empl_fec_naci" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="empl_fec_naci" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="empl_cod_ciud" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_ciud" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="empl_mai_empl" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_mai_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="empl_fot_empl" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_fot_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="empl_fir_empl" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_fir_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_reli" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_reli" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cas_empl" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cas_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_veh_empl" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_veh_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_otr_ingr" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_otr_ingr" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_fue_sind" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_fue_sind" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_car_iess" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_car_iess" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_iess" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_iess" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_pdie" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_pdie" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_tmil" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_tmil" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_lib_mili" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_lib_mili" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="empl_cod_copr" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_copr" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_car_prof" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_car_prof" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_tlic" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_tlic" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_num_lice" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_num_lice" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_num_pasa" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_num_pasa" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_num_perm" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_num_perm" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="empl_fin_pais" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="empl_fin_pais" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="empl_sal_sala" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="empl_sal_sala" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="empl_cod_mone" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_mone" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_tcon" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_tcon" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="empl_num_cont" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_num_cont" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_tpag" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_tpag" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="empl_cod_banc" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_banc" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_tcta" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_tcta" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="empl_num_ctas" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_num_ctas" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_seg_sala" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_seg_sala" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_hor_extr" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_hor_extr" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_des_impu" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_des_impu" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="empl_pen_alim" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="empl_pen_alim" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_parr" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_parr" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cod_barr" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_barr" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="empl_cod_inst" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_inst" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="empl_dir_nume" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_dir_nume" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="empl_ape_nomb" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_ape_nomb" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="empl_val_eval" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="empl_val_eval" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="empl_num_hora" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="empl_num_hora" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="empl_val_hora" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="empl_val_hora" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="empl_num_npat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_num_npat" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_cam_htra" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cam_htra" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="empl_cod_alt" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_cod_alt" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_anti_empl" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_anti_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="empl_val1_empl" Precision="18" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="empl_val1_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="empl_val2_empl" Precision="18" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="empl_val2_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="empl_val3_empl" Precision="18" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="empl_val3_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="empl_val4_empl" Precision="18" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="empl_val4_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="empl_val5_empl" Precision="18" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="empl_val5_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="empl_val6_empl" Precision="18" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="empl_val6_empl" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_son_desp" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_son_desp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="empl_son_tint" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_son_tint" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_empl" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_empl_cod_empr" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_empr" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_empl_ape_empl" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_ape_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_empl_nom_empl" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_nom_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_dir_empl" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_dir_empl" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_empl_dir_empl" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_dir_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_estc" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_estc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_sexo" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_sexo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_eemp" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_eemp" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_tsan" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_tsan" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_tsan" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_tsan" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_fec_naci" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_fec_naci" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="Original_empl_fec_naci" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="empl_fec_naci" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_ciud" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_ciud" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_empl_cod_ciud" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_ciud" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_mai_empl" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_mai_empl" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_empl_mai_empl" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_mai_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_fot_empl" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_fot_empl" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_empl_fot_empl" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_fot_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_fir_empl" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_fir_empl" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_empl_fir_empl" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_fir_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_reli" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_reli" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_reli" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_reli" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cas_empl" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cas_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_veh_empl" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_veh_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_otr_ingr" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_otr_ingr" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_fue_sind" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_fue_sind" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_car_iess" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_car_iess" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_car_iess" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_car_iess" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_iess" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_iess" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_iess" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_iess" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_pdie" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_pdie" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_pdie" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_pdie" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_tmil" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_tmil" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_tmil" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_tmil" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_lib_mili" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_lib_mili" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_lib_mili" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_lib_mili" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_copr" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_copr" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_empl_cod_copr" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_copr" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_car_prof" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_car_prof" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_car_prof" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_car_prof" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_tlic" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_tlic" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_tlic" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_tlic" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_num_lice" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_num_lice" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_num_lice" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_num_lice" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_num_pasa" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_num_pasa" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_num_pasa" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_num_pasa" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_num_perm" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_num_perm" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_num_perm" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_num_perm" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_fin_pais" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_fin_pais" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="Original_empl_fin_pais" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="empl_fin_pais" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_empl_sal_sala" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="empl_sal_sala" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_mone" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_mone" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_empl_cod_mone" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_mone" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_tcon" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_tcon" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_tcon" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_tcon" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_num_cont" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_num_cont" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_empl_num_cont" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_num_cont" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_tpag" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_tpag" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_tpag" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_tpag" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_banc" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_banc" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_empl_cod_banc" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_banc" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_tcta" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_tcta" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_tcta" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_tcta" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_num_ctas" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_num_ctas" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_empl_num_ctas" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_num_ctas" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_seg_sala" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_seg_sala" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_hor_extr" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_hor_extr" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_des_impu" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_des_impu" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_pen_alim" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_pen_alim" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_empl_pen_alim" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="empl_pen_alim" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_parr" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_parr" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_parr" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_parr" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_barr" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_barr" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cod_barr" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cod_barr" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_inst" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_inst" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_empl_cod_inst" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_inst" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_dir_nume" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_dir_nume" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_empl_dir_nume" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_dir_nume" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_empl_ape_nomb" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_ape_nomb" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_empl_val_eval" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="empl_val_eval" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_empl_num_hora" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="empl_num_hora" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_empl_val_hora" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="empl_val_hora" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_num_npat" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_num_npat" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_empl_num_npat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_num_npat" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cam_htra" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cam_htra" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_cam_htra" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_cam_htra" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_cod_alt" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_cod_alt" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_empl_cod_alt" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="empl_cod_alt" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_anti_empl" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_anti_empl" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_anti_empl" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_anti_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_val1_empl" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_val1_empl" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_empl_val1_empl" Precision="18" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="empl_val1_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_val2_empl" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_val2_empl" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_empl_val2_empl" Precision="18" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="empl_val2_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_val3_empl" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_val3_empl" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_empl_val3_empl" Precision="18" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="empl_val3_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_val4_empl" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_val4_empl" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_empl_val4_empl" Precision="18" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="empl_val4_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_val5_empl" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_val5_empl" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_empl_val5_empl" Precision="18" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="empl_val5_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_val6_empl" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_val6_empl" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="Original_empl_val6_empl" Precision="18" ProviderType="Decimal" Scale="6" Size="0" SourceColumn="empl_val6_empl" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_son_desp" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_son_desp" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_son_desp" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_son_desp" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_empl_son_tint" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="empl_son_tint" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_empl_son_tint" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="empl_son_tint" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="empl_cod_empl" DataSetColumn="empl_cod_empl" />
+              <Mapping SourceColumn="empl_cod_empr" DataSetColumn="empl_cod_empr" />
+              <Mapping SourceColumn="empl_ape_empl" DataSetColumn="empl_ape_empl" />
+              <Mapping SourceColumn="empl_nom_empl" DataSetColumn="empl_nom_empl" />
+              <Mapping SourceColumn="empl_dir_empl" DataSetColumn="empl_dir_empl" />
+              <Mapping SourceColumn="empl_cod_estc" DataSetColumn="empl_cod_estc" />
+              <Mapping SourceColumn="empl_cod_sexo" DataSetColumn="empl_cod_sexo" />
+              <Mapping SourceColumn="empl_cod_eemp" DataSetColumn="empl_cod_eemp" />
+              <Mapping SourceColumn="empl_cod_tsan" DataSetColumn="empl_cod_tsan" />
+              <Mapping SourceColumn="empl_fec_naci" DataSetColumn="empl_fec_naci" />
+              <Mapping SourceColumn="empl_cod_ciud" DataSetColumn="empl_cod_ciud" />
+              <Mapping SourceColumn="empl_mai_empl" DataSetColumn="empl_mai_empl" />
+              <Mapping SourceColumn="empl_fot_empl" DataSetColumn="empl_fot_empl" />
+              <Mapping SourceColumn="empl_fir_empl" DataSetColumn="empl_fir_empl" />
+              <Mapping SourceColumn="empl_cod_reli" DataSetColumn="empl_cod_reli" />
+              <Mapping SourceColumn="empl_cas_empl" DataSetColumn="empl_cas_empl" />
+              <Mapping SourceColumn="empl_veh_empl" DataSetColumn="empl_veh_empl" />
+              <Mapping SourceColumn="empl_otr_ingr" DataSetColumn="empl_otr_ingr" />
+              <Mapping SourceColumn="empl_fue_sind" DataSetColumn="empl_fue_sind" />
+              <Mapping SourceColumn="empl_car_iess" DataSetColumn="empl_car_iess" />
+              <Mapping SourceColumn="empl_cod_iess" DataSetColumn="empl_cod_iess" />
+              <Mapping SourceColumn="empl_cod_pdie" DataSetColumn="empl_cod_pdie" />
+              <Mapping SourceColumn="empl_cod_tmil" DataSetColumn="empl_cod_tmil" />
+              <Mapping SourceColumn="empl_lib_mili" DataSetColumn="empl_lib_mili" />
+              <Mapping SourceColumn="empl_cod_copr" DataSetColumn="empl_cod_copr" />
+              <Mapping SourceColumn="empl_car_prof" DataSetColumn="empl_car_prof" />
+              <Mapping SourceColumn="empl_cod_tlic" DataSetColumn="empl_cod_tlic" />
+              <Mapping SourceColumn="empl_num_lice" DataSetColumn="empl_num_lice" />
+              <Mapping SourceColumn="empl_num_pasa" DataSetColumn="empl_num_pasa" />
+              <Mapping SourceColumn="empl_num_perm" DataSetColumn="empl_num_perm" />
+              <Mapping SourceColumn="empl_fin_pais" DataSetColumn="empl_fin_pais" />
+              <Mapping SourceColumn="empl_sal_sala" DataSetColumn="empl_sal_sala" />
+              <Mapping SourceColumn="empl_cod_mone" DataSetColumn="empl_cod_mone" />
+              <Mapping SourceColumn="empl_cod_tcon" DataSetColumn="empl_cod_tcon" />
+              <Mapping SourceColumn="empl_num_cont" DataSetColumn="empl_num_cont" />
+              <Mapping SourceColumn="empl_cod_tpag" DataSetColumn="empl_cod_tpag" />
+              <Mapping SourceColumn="empl_cod_banc" DataSetColumn="empl_cod_banc" />
+              <Mapping SourceColumn="empl_cod_tcta" DataSetColumn="empl_cod_tcta" />
+              <Mapping SourceColumn="empl_num_ctas" DataSetColumn="empl_num_ctas" />
+              <Mapping SourceColumn="empl_seg_sala" DataSetColumn="empl_seg_sala" />
+              <Mapping SourceColumn="empl_hor_extr" DataSetColumn="empl_hor_extr" />
+              <Mapping SourceColumn="empl_des_impu" DataSetColumn="empl_des_impu" />
+              <Mapping SourceColumn="empl_pen_alim" DataSetColumn="empl_pen_alim" />
+              <Mapping SourceColumn="empl_cod_parr" DataSetColumn="empl_cod_parr" />
+              <Mapping SourceColumn="empl_cod_barr" DataSetColumn="empl_cod_barr" />
+              <Mapping SourceColumn="empl_cod_inst" DataSetColumn="empl_cod_inst" />
+              <Mapping SourceColumn="empl_dir_nume" DataSetColumn="empl_dir_nume" />
+              <Mapping SourceColumn="empl_ape_nomb" DataSetColumn="empl_ape_nomb" />
+              <Mapping SourceColumn="empl_val_eval" DataSetColumn="empl_val_eval" />
+              <Mapping SourceColumn="empl_num_hora" DataSetColumn="empl_num_hora" />
+              <Mapping SourceColumn="empl_val_hora" DataSetColumn="empl_val_hora" />
+              <Mapping SourceColumn="empl_num_npat" DataSetColumn="empl_num_npat" />
+              <Mapping SourceColumn="empl_cam_htra" DataSetColumn="empl_cam_htra" />
+              <Mapping SourceColumn="empl_cod_alt" DataSetColumn="empl_cod_alt" />
+              <Mapping SourceColumn="empl_anti_empl" DataSetColumn="empl_anti_empl" />
+              <Mapping SourceColumn="empl_val1_empl" DataSetColumn="empl_val1_empl" />
+              <Mapping SourceColumn="empl_val2_empl" DataSetColumn="empl_val2_empl" />
+              <Mapping SourceColumn="empl_val3_empl" DataSetColumn="empl_val3_empl" />
+              <Mapping SourceColumn="empl_val4_empl" DataSetColumn="empl_val4_empl" />
+              <Mapping SourceColumn="empl_val5_empl" DataSetColumn="empl_val5_empl" />
+              <Mapping SourceColumn="empl_val6_empl" DataSetColumn="empl_val6_empl" />
+              <Mapping SourceColumn="empl_son_desp" DataSetColumn="empl_son_desp" />
+              <Mapping SourceColumn="empl_son_tint" DataSetColumn="empl_son_tint" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="InformixConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByAct" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillByAct" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillByAct">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        empl_cod_empl, empl_cod_empr, empl_ape_empl, empl_nom_empl, empl_dir_empl, empl_cod_estc, empl_cod_sexo, empl_cod_eemp, empl_cod_tsan, empl_fec_naci, empl_cod_ciud, empl_mai_empl, empl_fot_empl, 
+                         empl_fir_empl, empl_cod_reli, empl_cas_empl, empl_veh_empl, empl_otr_ingr, empl_fue_sind, empl_car_iess, empl_cod_iess, empl_cod_pdie, empl_cod_tmil, empl_lib_mili, empl_cod_copr, empl_car_prof, empl_cod_tlic, 
+                         empl_num_lice, empl_num_pasa, empl_num_perm, empl_fin_pais, empl_sal_sala, empl_cod_mone, empl_cod_tcon, empl_num_cont, empl_cod_tpag, empl_cod_banc, empl_cod_tcta, empl_num_ctas, empl_seg_sala, 
+                         empl_hor_extr, empl_des_impu, empl_pen_alim, empl_cod_parr, empl_cod_barr, empl_cod_inst, empl_dir_nume, empl_ape_nomb, empl_val_eval, empl_num_hora, empl_val_hora, empl_num_npat, empl_cam_htra, 
+                         empl_cod_alt, empl_anti_empl, empl_val1_empl, empl_val2_empl, empl_val3_empl, empl_val4_empl, empl_val5_empl, empl_val6_empl, empl_son_desp, empl_son_tint
+FROM            informix.saeempl
+WHERE        (empl_cod_eemp = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="empl_cod_eemp" DataSourceName="newspringscci.saeempl" DataTypeServer="CHAR" DbType="AnsiString" Direction="Input" ParameterName="empl_cod_eemp" Precision="0" Scale="0" Size="1024" SourceColumn="empl_cod_eemp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="saetiem1TableAdapter" GeneratorDataComponentClassName="saetiem1TableAdapter" Name="saetiem1" UserDataComponentName="saetiem1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="InformixConnectionString (Settings)" DbObjectName="newspringscci.saetiem1" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM "informix"."saetiem1" WHERE (("codigo_serial" = ?) AND ("userid" = ?) AND ((? = 1 AND "checktime" IS NULL) OR ("checktime" = ?)) AND ((? = 1 AND "checktyte" IS NULL) OR ("checktyte" = ?)) AND ("verifycode" = ?) AND ("sensorid" = ?) AND ("workcode" = ?) AND ((? = 1 AND "sn" IS NULL) OR ("sn" = ?)) AND ("userextfmt" = ?) AND ((? = 1 AND "checkdate" IS NULL) OR ("checkdate" = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_codigo_serial" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="codigo_serial" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_userid" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="userid" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_checktime" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="checktime" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_checktime" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="checktime" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_checktyte" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="checktyte" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_checktyte" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="checktyte" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_verifycode" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="verifycode" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_sensorid" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="sensorid" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_workcode" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="workcode" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_sn" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="sn" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_sn" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="sn" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_userextfmt" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="userextfmt" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_checkdate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="checkdate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_checkdate" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="checkdate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO "informix"."saetiem1" ("userid", "checktime", "checktyte", "verifycode", "sensorid", "workcode", "sn", "userextfmt", "checkdate") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="userid" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="userid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="checktime" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="checktime" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="checktyte" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="checktyte" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="verifycode" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="verifycode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="sensorid" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="sensorid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="workcode" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="workcode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="sn" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="sn" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="userextfmt" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="userextfmt" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="checkdate" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="checkdate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT codigo_serial, userid, checktime, checktyte, verifycode, sensorid, workcode, sn, userextfmt, checkdate FROM informix.saetiem1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE "informix"."saetiem1" SET "userid" = ?, "checktime" = ?, "checktyte" = ?, "verifycode" = ?, "sensorid" = ?, "workcode" = ?, "sn" = ?, "userextfmt" = ?, "checkdate" = ? WHERE (("codigo_serial" = ?) AND ("userid" = ?) AND ((? = 1 AND "checktime" IS NULL) OR ("checktime" = ?)) AND ((? = 1 AND "checktyte" IS NULL) OR ("checktyte" = ?)) AND ("verifycode" = ?) AND ("sensorid" = ?) AND ("workcode" = ?) AND ((? = 1 AND "sn" IS NULL) OR ("sn" = ?)) AND ("userextfmt" = ?) AND ((? = 1 AND "checkdate" IS NULL) OR ("checkdate" = ?)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="userid" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="userid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="checktime" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="checktime" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="checktyte" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="checktyte" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="verifycode" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="verifycode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="sensorid" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="sensorid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="workcode" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="workcode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="sn" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="sn" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="userextfmt" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="userextfmt" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="checkdate" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="checkdate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_codigo_serial" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="codigo_serial" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_userid" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="userid" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_checktime" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="checktime" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="Original_checktime" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="checktime" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_checktyte" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="checktyte" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_checktyte" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="checktyte" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_verifycode" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="verifycode" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_sensorid" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="sensorid" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_workcode" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="workcode" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_sn" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="sn" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="Original_sn" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="sn" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="Original_userextfmt" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="userextfmt" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="IsNull_checkdate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="checkdate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="Original_checkdate" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="checkdate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="codigo_serial" DataSetColumn="codigo_serial" />
+              <Mapping SourceColumn="userid" DataSetColumn="userid" />
+              <Mapping SourceColumn="checktime" DataSetColumn="checktime" />
+              <Mapping SourceColumn="checktyte" DataSetColumn="checktyte" />
+              <Mapping SourceColumn="verifycode" DataSetColumn="verifycode" />
+              <Mapping SourceColumn="sensorid" DataSetColumn="sensorid" />
+              <Mapping SourceColumn="workcode" DataSetColumn="workcode" />
+              <Mapping SourceColumn="sn" DataSetColumn="sn" />
+              <Mapping SourceColumn="userextfmt" DataSetColumn="userextfmt" />
+              <Mapping SourceColumn="checkdate" DataSetColumn="checkdate" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="InformixConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertQuery" Modifier="Public" Name="InsertQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="InsertQuery">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO informix.saetiem1
+                         (userid, checktime, checktyte, verifycode, sensorid, workcode, userextfmt, checkdate)
+VALUES        (?, ?, ?, ?, ?, ?, ?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="userid" DataSourceName="newspringscci.saetiem1" DataTypeServer="CHAR" DbType="AnsiString" Direction="Input" ParameterName="userid" Precision="0" Scale="0" Size="1024" SourceColumn="userid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param2" ColumnName="checktime" DataSourceName="newspringscci.saetiem1" DataTypeServer="DATETIME HOUR TO FRACTION(5)" DbType="DateTime" Direction="Input" ParameterName="checktime" Precision="0" Scale="0" Size="0" SourceColumn="checktime" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param3" ColumnName="checktyte" DataSourceName="newspringscci.saetiem1" DataTypeServer="INTEGER" DbType="Int32" Direction="Input" ParameterName="checktyte" Precision="0" Scale="0" Size="0" SourceColumn="checktyte" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param4" ColumnName="verifycode" DataSourceName="newspringscci.saetiem1" DataTypeServer="INTEGER" DbType="Int32" Direction="Input" ParameterName="verifycode" Precision="0" Scale="0" Size="0" SourceColumn="verifycode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param5" ColumnName="sensorid" DataSourceName="newspringscci.saetiem1" DataTypeServer="CHAR" DbType="AnsiString" Direction="Input" ParameterName="sensorid" Precision="0" Scale="0" Size="1024" SourceColumn="sensorid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param6" ColumnName="workcode" DataSourceName="newspringscci.saetiem1" DataTypeServer="INTEGER" DbType="Int32" Direction="Input" ParameterName="workcode" Precision="0" Scale="0" Size="0" SourceColumn="workcode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param7" ColumnName="userextfmt" DataSourceName="newspringscci.saetiem1" DataTypeServer="INTEGER" DbType="Int32" Direction="Input" ParameterName="userextfmt" Precision="0" Scale="0" Size="0" SourceColumn="userextfmt" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param8" ColumnName="checkdate" DataSourceName="newspringscci.saetiem1" DataTypeServer="VARCHAR" DbType="AnsiString" Direction="Input" ParameterName="checkdate" Precision="0" Scale="0" Size="1024" SourceColumn="checkdate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="saetiemTableAdapter" GeneratorDataComponentClassName="saetiemTableAdapter" Name="saetiem" UserDataComponentName="saetiemTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="InformixConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        codigo_serial, userid, checktime, checktyte, verifycode, sensorid, workcode, sn, userextfmt, checkdate
+FROM            informix.saetiem
+ORDER BY codigo_serial</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="codigo_serial" DataSetColumn="codigo_serial" />
+              <Mapping SourceColumn="userid" DataSetColumn="userid" />
+              <Mapping SourceColumn="checktime" DataSetColumn="checktime" />
+              <Mapping SourceColumn="checktyte" DataSetColumn="checktyte" />
+              <Mapping SourceColumn="verifycode" DataSetColumn="verifycode" />
+              <Mapping SourceColumn="sensorid" DataSetColumn="sensorid" />
+              <Mapping SourceColumn="workcode" DataSetColumn="workcode" />
+              <Mapping SourceColumn="sn" DataSetColumn="sn" />
+              <Mapping SourceColumn="userextfmt" DataSetColumn="userextfmt" />
+              <Mapping SourceColumn="checkdate" DataSetColumn="checkdate" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="InformixConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy2" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy2" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        codigo_serial, userid, checktime, checktyte, verifycode, sensorid, workcode, sn, userextfmt, checkdate
+FROM            informix.saetiem
+WHERE        (sensorid = ?)
+ORDER BY codigo_serial</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="sensorid" DataSourceName="newspringscci.saetiem" DataTypeServer="CHAR" DbType="AnsiString" Direction="Input" ParameterName="sensorid" Precision="0" Scale="0" Size="1024" SourceColumn="sensorid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="InformixConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertQuery" Modifier="Public" Name="InsertQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="InsertQuery">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>INSERT INTO informix.saetiem
+                         (userid, checktime, checktyte, verifycode, sensorid, workcode, userextfmt, checkdate)
+VALUES        (?, ?, ?, ?, ?, ?, ?, ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param1" ColumnName="userid" DataSourceName="newspringscci.saetiem" DataTypeServer="CHAR" DbType="AnsiString" Direction="Input" ParameterName="userid" Precision="0" Scale="0" Size="1024" SourceColumn="userid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param2" ColumnName="checktime" DataSourceName="newspringscci.saetiem" DataTypeServer="DATETIME HOUR TO FRACTION(5)" DbType="DateTime" Direction="Input" ParameterName="checktime" Precision="0" Scale="0" Size="0" SourceColumn="checktime" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param3" ColumnName="checktyte" DataSourceName="newspringscci.saetiem" DataTypeServer="INTEGER" DbType="Int32" Direction="Input" ParameterName="checktyte" Precision="0" Scale="0" Size="0" SourceColumn="checktyte" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param4" ColumnName="verifycode" DataSourceName="newspringscci.saetiem" DataTypeServer="INTEGER" DbType="Int32" Direction="Input" ParameterName="verifycode" Precision="0" Scale="0" Size="0" SourceColumn="verifycode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param5" ColumnName="sensorid" DataSourceName="newspringscci.saetiem" DataTypeServer="CHAR" DbType="AnsiString" Direction="Input" ParameterName="sensorid" Precision="0" Scale="0" Size="1024" SourceColumn="sensorid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param6" ColumnName="workcode" DataSourceName="newspringscci.saetiem" DataTypeServer="INTEGER" DbType="Int32" Direction="Input" ParameterName="workcode" Precision="0" Scale="0" Size="0" SourceColumn="workcode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param7" ColumnName="userextfmt" DataSourceName="newspringscci.saetiem" DataTypeServer="INTEGER" DbType="Int32" Direction="Input" ParameterName="userextfmt" Precision="0" Scale="0" Size="0" SourceColumn="userextfmt" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param8" ColumnName="checkdate" DataSourceName="newspringscci.saetiem" DataTypeServer="VARCHAR" DbType="AnsiString" Direction="Input" ParameterName="checkdate" Precision="0" Scale="0" Size="1024" SourceColumn="checkdate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+              </DbSource>
+              <DbSource ConnectionRef="InformixConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQuery" Modifier="Public" Name="UpdateQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="UpdateQuery">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE       informix.saetiem
+SET                checktyte = ?
+WHERE        (codigo_serial = ?)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param1" ColumnName="checktyte" DataSourceName="newspringscci.saetiem" DataTypeServer="INTEGER" DbType="Int32" Direction="Input" ParameterName="checktyte" Precision="0" Scale="0" Size="0" SourceColumn="checktyte" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Param2" ColumnName="codigo_serial" DataSourceName="newspringscci.saetiem" DataTypeServer="SERIAL" DbType="Int32" Direction="Input" ParameterName="Original_codigo_serial" Precision="0" Scale="0" Size="0" SourceColumn="codigo_serial" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="saeempl" msprop:Generator_RowClassName="saeemplRow" msprop:Generator_RowEvHandlerName="saeemplRowChangeEventHandler" msprop:Generator_RowDeletedName="saeemplRowDeleted" msprop:Generator_RowDeletingName="saeemplRowDeleting" msprop:Generator_RowEvArgName="saeemplRowChangeEvent" msprop:Generator_TablePropName="saeempl" msprop:Generator_RowChangedName="saeemplRowChanged" msprop:Generator_RowChangingName="saeemplRowChanging" msprop:Generator_TableClassName="saeemplDataTable" msprop:Generator_UserTableName="saeempl" msprop:Generator_TableVarName="tablesaeempl">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="empl_cod_empl" msprop:Generator_ColumnPropNameInRow="empl_cod_empl" msprop:Generator_ColumnPropNameInTable="empl_cod_emplColumn" msprop:Generator_ColumnVarNameInTable="columnempl_cod_empl" msprop:Generator_UserColumnName="empl_cod_empl">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_cod_empr" msprop:Generator_ColumnPropNameInRow="empl_cod_empr" msprop:Generator_ColumnPropNameInTable="empl_cod_emprColumn" msprop:Generator_ColumnVarNameInTable="columnempl_cod_empr" msprop:Generator_UserColumnName="empl_cod_empr" type="xs:int" />
+              <xs:element name="empl_ape_empl" msprop:Generator_ColumnPropNameInRow="empl_ape_empl" msprop:Generator_ColumnPropNameInTable="empl_ape_emplColumn" msprop:Generator_ColumnVarNameInTable="columnempl_ape_empl" msprop:Generator_UserColumnName="empl_ape_empl">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_nom_empl" msprop:Generator_ColumnPropNameInRow="empl_nom_empl" msprop:Generator_ColumnPropNameInTable="empl_nom_emplColumn" msprop:Generator_ColumnVarNameInTable="columnempl_nom_empl" msprop:Generator_UserColumnName="empl_nom_empl">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_dir_empl" msprop:Generator_ColumnPropNameInRow="empl_dir_empl" msprop:Generator_ColumnPropNameInTable="empl_dir_emplColumn" msprop:Generator_ColumnVarNameInTable="columnempl_dir_empl" msprop:Generator_UserColumnName="empl_dir_empl" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_cod_estc" msprop:Generator_ColumnPropNameInRow="empl_cod_estc" msprop:Generator_ColumnPropNameInTable="empl_cod_estcColumn" msprop:Generator_ColumnVarNameInTable="columnempl_cod_estc" msprop:Generator_UserColumnName="empl_cod_estc">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_cod_sexo" msprop:Generator_ColumnPropNameInRow="empl_cod_sexo" msprop:Generator_ColumnPropNameInTable="empl_cod_sexoColumn" msprop:Generator_ColumnVarNameInTable="columnempl_cod_sexo" msprop:Generator_UserColumnName="empl_cod_sexo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_cod_eemp" msprop:Generator_ColumnPropNameInRow="empl_cod_eemp" msprop:Generator_ColumnPropNameInTable="empl_cod_eempColumn" msprop:Generator_ColumnVarNameInTable="columnempl_cod_eemp" msprop:Generator_UserColumnName="empl_cod_eemp">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_cod_tsan" msprop:Generator_ColumnPropNameInRow="empl_cod_tsan" msprop:Generator_ColumnPropNameInTable="empl_cod_tsanColumn" msprop:Generator_ColumnVarNameInTable="columnempl_cod_tsan" msprop:Generator_UserColumnName="empl_cod_tsan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_fec_naci" msprop:Generator_ColumnPropNameInRow="empl_fec_naci" msprop:Generator_ColumnPropNameInTable="empl_fec_naciColumn" msprop:Generator_ColumnVarNameInTable="columnempl_fec_naci" msprop:Generator_UserColumnName="empl_fec_naci" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="empl_cod_ciud" msprop:Generator_ColumnPropNameInRow="empl_cod_ciud" msprop:Generator_ColumnPropNameInTable="empl_cod_ciudColumn" msprop:Generator_ColumnVarNameInTable="columnempl_cod_ciud" msprop:Generator_UserColumnName="empl_cod_ciud" type="xs:int" minOccurs="0" />
+              <xs:element name="empl_mai_empl" msprop:Generator_ColumnPropNameInRow="empl_mai_empl" msprop:Generator_ColumnPropNameInTable="empl_mai_emplColumn" msprop:Generator_ColumnVarNameInTable="columnempl_mai_empl" msprop:Generator_UserColumnName="empl_mai_empl" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_fot_empl" msprop:Generator_ColumnPropNameInRow="empl_fot_empl" msprop:Generator_ColumnPropNameInTable="empl_fot_emplColumn" msprop:Generator_ColumnVarNameInTable="columnempl_fot_empl" msprop:Generator_UserColumnName="empl_fot_empl" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_fir_empl" msprop:Generator_ColumnPropNameInRow="empl_fir_empl" msprop:Generator_ColumnPropNameInTable="empl_fir_emplColumn" msprop:Generator_ColumnVarNameInTable="columnempl_fir_empl" msprop:Generator_UserColumnName="empl_fir_empl" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_cod_reli" msprop:Generator_ColumnPropNameInRow="empl_cod_reli" msprop:Generator_ColumnPropNameInTable="empl_cod_reliColumn" msprop:Generator_ColumnVarNameInTable="columnempl_cod_reli" msprop:Generator_UserColumnName="empl_cod_reli" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_cas_empl" msprop:Generator_ColumnPropNameInRow="empl_cas_empl" msprop:Generator_ColumnPropNameInTable="empl_cas_emplColumn" msprop:Generator_ColumnVarNameInTable="columnempl_cas_empl" msprop:Generator_UserColumnName="empl_cas_empl">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_veh_empl" msprop:Generator_ColumnPropNameInRow="empl_veh_empl" msprop:Generator_ColumnPropNameInTable="empl_veh_emplColumn" msprop:Generator_ColumnVarNameInTable="columnempl_veh_empl" msprop:Generator_UserColumnName="empl_veh_empl">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_otr_ingr" msprop:Generator_ColumnPropNameInRow="empl_otr_ingr" msprop:Generator_ColumnPropNameInTable="empl_otr_ingrColumn" msprop:Generator_ColumnVarNameInTable="columnempl_otr_ingr" msprop:Generator_UserColumnName="empl_otr_ingr">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_fue_sind" msprop:Generator_ColumnPropNameInRow="empl_fue_sind" msprop:Generator_ColumnPropNameInTable="empl_fue_sindColumn" msprop:Generator_ColumnVarNameInTable="columnempl_fue_sind" msprop:Generator_UserColumnName="empl_fue_sind">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_car_iess" msprop:Generator_ColumnPropNameInRow="empl_car_iess" msprop:Generator_ColumnPropNameInTable="empl_car_iessColumn" msprop:Generator_ColumnVarNameInTable="columnempl_car_iess" msprop:Generator_UserColumnName="empl_car_iess" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_cod_iess" msprop:Generator_ColumnPropNameInRow="empl_cod_iess" msprop:Generator_ColumnPropNameInTable="empl_cod_iessColumn" msprop:Generator_ColumnVarNameInTable="columnempl_cod_iess" msprop:Generator_UserColumnName="empl_cod_iess" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_cod_pdie" msprop:Generator_ColumnPropNameInRow="empl_cod_pdie" msprop:Generator_ColumnPropNameInTable="empl_cod_pdieColumn" msprop:Generator_ColumnVarNameInTable="columnempl_cod_pdie" msprop:Generator_UserColumnName="empl_cod_pdie" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_cod_tmil" msprop:Generator_ColumnPropNameInRow="empl_cod_tmil" msprop:Generator_ColumnPropNameInTable="empl_cod_tmilColumn" msprop:Generator_ColumnVarNameInTable="columnempl_cod_tmil" msprop:Generator_UserColumnName="empl_cod_tmil" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_lib_mili" msprop:Generator_ColumnPropNameInRow="empl_lib_mili" msprop:Generator_ColumnPropNameInTable="empl_lib_miliColumn" msprop:Generator_ColumnVarNameInTable="columnempl_lib_mili" msprop:Generator_UserColumnName="empl_lib_mili" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_cod_copr" msprop:Generator_ColumnPropNameInRow="empl_cod_copr" msprop:Generator_ColumnPropNameInTable="empl_cod_coprColumn" msprop:Generator_ColumnVarNameInTable="columnempl_cod_copr" msprop:Generator_UserColumnName="empl_cod_copr" type="xs:int" minOccurs="0" />
+              <xs:element name="empl_car_prof" msprop:Generator_ColumnPropNameInRow="empl_car_prof" msprop:Generator_ColumnPropNameInTable="empl_car_profColumn" msprop:Generator_ColumnVarNameInTable="columnempl_car_prof" msprop:Generator_UserColumnName="empl_car_prof" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_cod_tlic" msprop:Generator_ColumnPropNameInRow="empl_cod_tlic" msprop:Generator_ColumnPropNameInTable="empl_cod_tlicColumn" msprop:Generator_ColumnVarNameInTable="columnempl_cod_tlic" msprop:Generator_UserColumnName="empl_cod_tlic" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_num_lice" msprop:Generator_ColumnPropNameInRow="empl_num_lice" msprop:Generator_ColumnPropNameInTable="empl_num_liceColumn" msprop:Generator_ColumnVarNameInTable="columnempl_num_lice" msprop:Generator_UserColumnName="empl_num_lice" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_num_pasa" msprop:Generator_ColumnPropNameInRow="empl_num_pasa" msprop:Generator_ColumnPropNameInTable="empl_num_pasaColumn" msprop:Generator_ColumnVarNameInTable="columnempl_num_pasa" msprop:Generator_UserColumnName="empl_num_pasa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_num_perm" msprop:Generator_ColumnPropNameInRow="empl_num_perm" msprop:Generator_ColumnPropNameInTable="empl_num_permColumn" msprop:Generator_ColumnVarNameInTable="columnempl_num_perm" msprop:Generator_UserColumnName="empl_num_perm" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_fin_pais" msprop:Generator_ColumnPropNameInRow="empl_fin_pais" msprop:Generator_ColumnPropNameInTable="empl_fin_paisColumn" msprop:Generator_ColumnVarNameInTable="columnempl_fin_pais" msprop:Generator_UserColumnName="empl_fin_pais" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="empl_sal_sala" msprop:Generator_ColumnPropNameInRow="empl_sal_sala" msprop:Generator_ColumnPropNameInTable="empl_sal_salaColumn" msprop:Generator_ColumnVarNameInTable="columnempl_sal_sala" msprop:Generator_UserColumnName="empl_sal_sala" type="xs:decimal" />
+              <xs:element name="empl_cod_mone" msprop:Generator_ColumnPropNameInRow="empl_cod_mone" msprop:Generator_ColumnPropNameInTable="empl_cod_moneColumn" msprop:Generator_ColumnVarNameInTable="columnempl_cod_mone" msprop:Generator_UserColumnName="empl_cod_mone" type="xs:int" minOccurs="0" />
+              <xs:element name="empl_cod_tcon" msprop:Generator_ColumnPropNameInRow="empl_cod_tcon" msprop:Generator_ColumnPropNameInTable="empl_cod_tconColumn" msprop:Generator_ColumnVarNameInTable="columnempl_cod_tcon" msprop:Generator_UserColumnName="empl_cod_tcon" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_num_cont" msprop:Generator_ColumnPropNameInRow="empl_num_cont" msprop:Generator_ColumnPropNameInTable="empl_num_contColumn" msprop:Generator_ColumnVarNameInTable="columnempl_num_cont" msprop:Generator_UserColumnName="empl_num_cont" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_cod_tpag" msprop:Generator_ColumnPropNameInRow="empl_cod_tpag" msprop:Generator_ColumnPropNameInTable="empl_cod_tpagColumn" msprop:Generator_ColumnVarNameInTable="columnempl_cod_tpag" msprop:Generator_UserColumnName="empl_cod_tpag" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_cod_banc" msprop:Generator_ColumnPropNameInRow="empl_cod_banc" msprop:Generator_ColumnPropNameInTable="empl_cod_bancColumn" msprop:Generator_ColumnVarNameInTable="columnempl_cod_banc" msprop:Generator_UserColumnName="empl_cod_banc" type="xs:int" minOccurs="0" />
+              <xs:element name="empl_cod_tcta" msprop:Generator_ColumnPropNameInRow="empl_cod_tcta" msprop:Generator_ColumnPropNameInTable="empl_cod_tctaColumn" msprop:Generator_ColumnVarNameInTable="columnempl_cod_tcta" msprop:Generator_UserColumnName="empl_cod_tcta" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_num_ctas" msprop:Generator_ColumnPropNameInRow="empl_num_ctas" msprop:Generator_ColumnPropNameInTable="empl_num_ctasColumn" msprop:Generator_ColumnVarNameInTable="columnempl_num_ctas" msprop:Generator_UserColumnName="empl_num_ctas" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_seg_sala" msprop:Generator_ColumnPropNameInRow="empl_seg_sala" msprop:Generator_ColumnPropNameInTable="empl_seg_salaColumn" msprop:Generator_ColumnVarNameInTable="columnempl_seg_sala" msprop:Generator_UserColumnName="empl_seg_sala">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_hor_extr" msprop:Generator_ColumnPropNameInRow="empl_hor_extr" msprop:Generator_ColumnPropNameInTable="empl_hor_extrColumn" msprop:Generator_ColumnVarNameInTable="columnempl_hor_extr" msprop:Generator_UserColumnName="empl_hor_extr">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_des_impu" msprop:Generator_ColumnPropNameInRow="empl_des_impu" msprop:Generator_ColumnPropNameInTable="empl_des_impuColumn" msprop:Generator_ColumnVarNameInTable="columnempl_des_impu" msprop:Generator_UserColumnName="empl_des_impu">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_pen_alim" msprop:Generator_ColumnPropNameInRow="empl_pen_alim" msprop:Generator_ColumnPropNameInTable="empl_pen_alimColumn" msprop:Generator_ColumnVarNameInTable="columnempl_pen_alim" msprop:Generator_UserColumnName="empl_pen_alim" type="xs:decimal" minOccurs="0" />
+              <xs:element name="empl_cod_parr" msprop:Generator_ColumnPropNameInRow="empl_cod_parr" msprop:Generator_ColumnPropNameInTable="empl_cod_parrColumn" msprop:Generator_ColumnVarNameInTable="columnempl_cod_parr" msprop:Generator_UserColumnName="empl_cod_parr" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_cod_barr" msprop:Generator_ColumnPropNameInRow="empl_cod_barr" msprop:Generator_ColumnPropNameInTable="empl_cod_barrColumn" msprop:Generator_ColumnVarNameInTable="columnempl_cod_barr" msprop:Generator_UserColumnName="empl_cod_barr" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_cod_inst" msprop:Generator_ColumnPropNameInRow="empl_cod_inst" msprop:Generator_ColumnPropNameInTable="empl_cod_instColumn" msprop:Generator_ColumnVarNameInTable="columnempl_cod_inst" msprop:Generator_UserColumnName="empl_cod_inst" type="xs:int" minOccurs="0" />
+              <xs:element name="empl_dir_nume" msprop:Generator_ColumnPropNameInRow="empl_dir_nume" msprop:Generator_ColumnPropNameInTable="empl_dir_numeColumn" msprop:Generator_ColumnVarNameInTable="columnempl_dir_nume" msprop:Generator_UserColumnName="empl_dir_nume" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_ape_nomb" msprop:Generator_ColumnPropNameInRow="empl_ape_nomb" msprop:Generator_ColumnPropNameInTable="empl_ape_nombColumn" msprop:Generator_ColumnVarNameInTable="columnempl_ape_nomb" msprop:Generator_UserColumnName="empl_ape_nomb">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_val_eval" msprop:Generator_ColumnPropNameInRow="empl_val_eval" msprop:Generator_ColumnPropNameInTable="empl_val_evalColumn" msprop:Generator_ColumnVarNameInTable="columnempl_val_eval" msprop:Generator_UserColumnName="empl_val_eval" type="xs:decimal" />
+              <xs:element name="empl_num_hora" msprop:Generator_ColumnPropNameInRow="empl_num_hora" msprop:Generator_ColumnPropNameInTable="empl_num_horaColumn" msprop:Generator_ColumnVarNameInTable="columnempl_num_hora" msprop:Generator_UserColumnName="empl_num_hora" type="xs:decimal" />
+              <xs:element name="empl_val_hora" msprop:Generator_ColumnPropNameInRow="empl_val_hora" msprop:Generator_ColumnPropNameInTable="empl_val_horaColumn" msprop:Generator_ColumnVarNameInTable="columnempl_val_hora" msprop:Generator_UserColumnName="empl_val_hora" type="xs:decimal" />
+              <xs:element name="empl_num_npat" msprop:Generator_ColumnPropNameInRow="empl_num_npat" msprop:Generator_ColumnPropNameInTable="empl_num_npatColumn" msprop:Generator_ColumnVarNameInTable="columnempl_num_npat" msprop:Generator_UserColumnName="empl_num_npat" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_cam_htra" msprop:Generator_ColumnPropNameInRow="empl_cam_htra" msprop:Generator_ColumnPropNameInTable="empl_cam_htraColumn" msprop:Generator_ColumnVarNameInTable="columnempl_cam_htra" msprop:Generator_UserColumnName="empl_cam_htra" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_cod_alt" msprop:Generator_ColumnPropNameInRow="empl_cod_alt" msprop:Generator_ColumnPropNameInTable="empl_cod_altColumn" msprop:Generator_ColumnVarNameInTable="columnempl_cod_alt" msprop:Generator_UserColumnName="empl_cod_alt" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_anti_empl" msprop:Generator_ColumnPropNameInRow="empl_anti_empl" msprop:Generator_ColumnPropNameInTable="empl_anti_emplColumn" msprop:Generator_ColumnVarNameInTable="columnempl_anti_empl" msprop:Generator_UserColumnName="empl_anti_empl" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_val1_empl" msprop:Generator_ColumnPropNameInRow="empl_val1_empl" msprop:Generator_ColumnPropNameInTable="empl_val1_emplColumn" msprop:Generator_ColumnVarNameInTable="columnempl_val1_empl" msprop:Generator_UserColumnName="empl_val1_empl" type="xs:decimal" minOccurs="0" />
+              <xs:element name="empl_val2_empl" msprop:Generator_ColumnPropNameInRow="empl_val2_empl" msprop:Generator_ColumnPropNameInTable="empl_val2_emplColumn" msprop:Generator_ColumnVarNameInTable="columnempl_val2_empl" msprop:Generator_UserColumnName="empl_val2_empl" type="xs:decimal" minOccurs="0" />
+              <xs:element name="empl_val3_empl" msprop:Generator_ColumnPropNameInRow="empl_val3_empl" msprop:Generator_ColumnPropNameInTable="empl_val3_emplColumn" msprop:Generator_ColumnVarNameInTable="columnempl_val3_empl" msprop:Generator_UserColumnName="empl_val3_empl" type="xs:decimal" minOccurs="0" />
+              <xs:element name="empl_val4_empl" msprop:Generator_ColumnPropNameInRow="empl_val4_empl" msprop:Generator_ColumnPropNameInTable="empl_val4_emplColumn" msprop:Generator_ColumnVarNameInTable="columnempl_val4_empl" msprop:Generator_UserColumnName="empl_val4_empl" type="xs:decimal" minOccurs="0" />
+              <xs:element name="empl_val5_empl" msprop:Generator_ColumnPropNameInRow="empl_val5_empl" msprop:Generator_ColumnPropNameInTable="empl_val5_emplColumn" msprop:Generator_ColumnVarNameInTable="columnempl_val5_empl" msprop:Generator_UserColumnName="empl_val5_empl" type="xs:decimal" minOccurs="0" />
+              <xs:element name="empl_val6_empl" msprop:Generator_ColumnPropNameInRow="empl_val6_empl" msprop:Generator_ColumnPropNameInTable="empl_val6_emplColumn" msprop:Generator_ColumnVarNameInTable="columnempl_val6_empl" msprop:Generator_UserColumnName="empl_val6_empl" type="xs:decimal" minOccurs="0" />
+              <xs:element name="empl_son_desp" msprop:Generator_ColumnPropNameInRow="empl_son_desp" msprop:Generator_ColumnPropNameInTable="empl_son_despColumn" msprop:Generator_ColumnVarNameInTable="columnempl_son_desp" msprop:Generator_UserColumnName="empl_son_desp" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="empl_son_tint" msprop:Generator_ColumnPropNameInRow="empl_son_tint" msprop:Generator_ColumnPropNameInTable="empl_son_tintColumn" msprop:Generator_ColumnVarNameInTable="columnempl_son_tint" msprop:Generator_UserColumnName="empl_son_tint" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="saetiem1" msprop:Generator_RowEvHandlerName="saetiem1RowChangeEventHandler" msprop:Generator_RowDeletedName="saetiem1RowDeleted" msprop:Generator_RowDeletingName="saetiem1RowDeleting" msprop:Generator_RowEvArgName="saetiem1RowChangeEvent" msprop:Generator_TablePropName="saetiem1" msprop:Generator_RowChangedName="saetiem1RowChanged" msprop:Generator_RowChangingName="saetiem1RowChanging" msprop:Generator_TableClassName="saetiem1DataTable" msprop:Generator_RowClassName="saetiem1Row" msprop:Generator_TableVarName="tablesaetiem1" msprop:Generator_UserTableName="saetiem1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="codigo_serial" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="codigo_serial" msprop:Generator_ColumnPropNameInTable="codigo_serialColumn" msprop:Generator_ColumnVarNameInTable="columncodigo_serial" msprop:Generator_UserColumnName="codigo_serial" type="xs:int" />
+              <xs:element name="userid" msprop:Generator_ColumnPropNameInRow="userid" msprop:Generator_ColumnPropNameInTable="useridColumn" msprop:Generator_ColumnVarNameInTable="columnuserid" msprop:Generator_UserColumnName="userid">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="checktime" msprop:Generator_ColumnPropNameInRow="checktime" msprop:Generator_ColumnPropNameInTable="checktimeColumn" msprop:Generator_ColumnVarNameInTable="columnchecktime" msprop:Generator_UserColumnName="checktime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="checktyte" msprop:Generator_ColumnPropNameInRow="checktyte" msprop:Generator_ColumnPropNameInTable="checktyteColumn" msprop:Generator_ColumnVarNameInTable="columnchecktyte" msprop:Generator_UserColumnName="checktyte" type="xs:int" minOccurs="0" />
+              <xs:element name="verifycode" msprop:Generator_ColumnPropNameInRow="verifycode" msprop:Generator_ColumnPropNameInTable="verifycodeColumn" msprop:Generator_ColumnVarNameInTable="columnverifycode" msprop:Generator_UserColumnName="verifycode" type="xs:int" />
+              <xs:element name="sensorid" msprop:Generator_ColumnPropNameInRow="sensorid" msprop:Generator_ColumnPropNameInTable="sensoridColumn" msprop:Generator_ColumnVarNameInTable="columnsensorid" msprop:Generator_UserColumnName="sensorid">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="workcode" msprop:Generator_ColumnPropNameInRow="workcode" msprop:Generator_ColumnPropNameInTable="workcodeColumn" msprop:Generator_ColumnVarNameInTable="columnworkcode" msprop:Generator_UserColumnName="workcode" type="xs:int" />
+              <xs:element name="sn" msprop:Generator_ColumnPropNameInRow="sn" msprop:Generator_ColumnPropNameInTable="snColumn" msprop:Generator_ColumnVarNameInTable="columnsn" msprop:Generator_UserColumnName="sn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="userextfmt" msprop:Generator_ColumnPropNameInRow="userextfmt" msprop:Generator_ColumnPropNameInTable="userextfmtColumn" msprop:Generator_ColumnVarNameInTable="columnuserextfmt" msprop:Generator_UserColumnName="userextfmt" type="xs:int" />
+              <xs:element name="checkdate" msprop:Generator_ColumnPropNameInRow="checkdate" msprop:Generator_ColumnPropNameInTable="checkdateColumn" msprop:Generator_ColumnVarNameInTable="columncheckdate" msprop:Generator_UserColumnName="checkdate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="saetiem" msprop:Generator_RowEvHandlerName="saetiemRowChangeEventHandler" msprop:Generator_RowDeletedName="saetiemRowDeleted" msprop:Generator_RowDeletingName="saetiemRowDeleting" msprop:Generator_RowEvArgName="saetiemRowChangeEvent" msprop:Generator_TablePropName="saetiem" msprop:Generator_RowChangedName="saetiemRowChanged" msprop:Generator_RowChangingName="saetiemRowChanging" msprop:Generator_TableClassName="saetiemDataTable" msprop:Generator_RowClassName="saetiemRow" msprop:Generator_TableVarName="tablesaetiem" msprop:Generator_UserTableName="saetiem">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="codigo_serial" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="codigo_serial" msprop:Generator_ColumnPropNameInTable="codigo_serialColumn" msprop:Generator_ColumnVarNameInTable="columncodigo_serial" msprop:Generator_UserColumnName="codigo_serial" type="xs:int" />
+              <xs:element name="userid" msprop:Generator_ColumnPropNameInRow="userid" msprop:Generator_ColumnPropNameInTable="useridColumn" msprop:Generator_ColumnVarNameInTable="columnuserid" msprop:Generator_UserColumnName="userid">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="checktime" msprop:Generator_ColumnPropNameInRow="checktime" msprop:Generator_ColumnPropNameInTable="checktimeColumn" msprop:Generator_ColumnVarNameInTable="columnchecktime" msprop:Generator_UserColumnName="checktime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="checktyte" msprop:Generator_ColumnPropNameInRow="checktyte" msprop:Generator_ColumnPropNameInTable="checktyteColumn" msprop:Generator_ColumnVarNameInTable="columnchecktyte" msprop:Generator_UserColumnName="checktyte" type="xs:int" minOccurs="0" />
+              <xs:element name="verifycode" msprop:Generator_ColumnPropNameInRow="verifycode" msprop:Generator_ColumnPropNameInTable="verifycodeColumn" msprop:Generator_ColumnVarNameInTable="columnverifycode" msprop:Generator_UserColumnName="verifycode" type="xs:int" />
+              <xs:element name="sensorid" msprop:Generator_ColumnPropNameInRow="sensorid" msprop:Generator_ColumnPropNameInTable="sensoridColumn" msprop:Generator_ColumnVarNameInTable="columnsensorid" msprop:Generator_UserColumnName="sensorid">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="workcode" msprop:Generator_ColumnPropNameInRow="workcode" msprop:Generator_ColumnPropNameInTable="workcodeColumn" msprop:Generator_ColumnVarNameInTable="columnworkcode" msprop:Generator_UserColumnName="workcode" type="xs:int" />
+              <xs:element name="sn" msprop:Generator_ColumnPropNameInRow="sn" msprop:Generator_ColumnPropNameInTable="snColumn" msprop:Generator_ColumnVarNameInTable="columnsn" msprop:Generator_UserColumnName="sn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="userextfmt" msprop:Generator_ColumnPropNameInRow="userextfmt" msprop:Generator_ColumnPropNameInTable="userextfmtColumn" msprop:Generator_ColumnVarNameInTable="columnuserextfmt" msprop:Generator_UserColumnName="userextfmt" type="xs:int" />
+              <xs:element name="checkdate" msprop:Generator_ColumnPropNameInRow="checkdate" msprop:Generator_ColumnPropNameInTable="checkdateColumn" msprop:Generator_ColumnVarNameInTable="columncheckdate" msprop:Generator_UserColumnName="checkdate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:saeempl" />
+      <xs:field xpath="mstns:empl_cod_empl" />
+      <xs:field xpath="mstns:empl_cod_empr" />
+    </xs:unique>
+    <xs:unique name="saetiem1_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:saetiem1" />
+      <xs:field xpath="mstns:codigo_serial" />
+    </xs:unique>
+    <xs:unique name="saetiem_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:saetiem" />
+      <xs:field xpath="mstns:codigo_serial" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
