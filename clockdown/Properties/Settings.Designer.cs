@@ -47,7 +47,8 @@ namespace clockdown.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=R:\\att2000.mdb")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.16.0;Data Source=R:\\\\att2000.mdb;Persist Security In" +
+            "fo=True")]
         public string att2000ConnectionString {
             get {
                 return ((string)(this["att2000ConnectionString"]));
