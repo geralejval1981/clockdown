@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.Odbc;
 using System.Configuration;
+using clockdown.Properties;
 
 namespace clockdown
 {
@@ -13,7 +14,8 @@ namespace clockdown
     {
         public static OdbcConnection GetConnection()
         {
-            return new OdbcConnection ("Dsn=Informix server");
+            string informixDsn = Settings.Default.InformixConnectionString;
+            return new OdbcConnection (informixDsn);
         }
 
     }

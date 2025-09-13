@@ -37,7 +37,7 @@ namespace clockdown.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Dsn=Informix_server")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Dsn=Informix_server_64")]
         public string InformixConnectionString {
             get {
                 return ((string)(this["InformixConnectionString"]));
@@ -47,7 +47,7 @@ namespace clockdown.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=R:\\att2000.mdb")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=R:\\att2000.mdb")]
         public string att2000ConnectionString {
             get {
                 return ((string)(this["att2000ConnectionString"]));
