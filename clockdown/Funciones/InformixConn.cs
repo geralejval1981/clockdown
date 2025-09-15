@@ -14,8 +14,8 @@ namespace clockdown
     {
         public static OdbcConnection GetConnection()
         {
-            string informixDsn = Settings.Default.InformixConnectionString;
-            return new OdbcConnection (informixDsn);
+            string informixConn = Settings.Default.InformixConnectionString;
+            return new OdbcConnection (informixConn);
         }
 
     }
